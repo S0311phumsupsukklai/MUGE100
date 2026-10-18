@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="th"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Long Life Sleep & Well-being</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfaff;--cd:#fff;--tx:#2a2550;--mu:#6c6a8c;--ac:#6f5fc0;--ln:#e6e3f5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16142e;--cd:#201e3f;--tx:#eceaff;--mu:#a9a6d0;--ln:#38356a}}
+:root[data-theme="dark"]{--bg:#16142e;--cd:#201e3f;--tx:#eceaff;--mu:#a9a6d0;--ln:#38356a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:Prompt,system-ui,sans-serif;line-height:1.6}
+main{max-width:1040px;margin:auto;padding:0 18px 40px}
+section{display:none}section.on{display:block;animation:f .3s}@keyframes f{from{opacity:0;transform:translateY(6px)}}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:var(--cd);border-bottom:1px solid var(--ln);gap:10px}
+.lg0{display:flex;align-items:center;gap:10px;font-weight:600;line-height:1.2}.lg0 i,.strip i{width:44px;height:44px;border-radius:50%;background:#eeeaff;display:grid;place-items:center;font-style:normal;flex:none}
+.nav .mu{display:none}@media(min-width:760px){.nav .mu{display:block}}
+.btn{display:block;width:100%;border:0;border-radius:12px;padding:14px 18px;font-weight:600;font-size:16px;font-family:inherit;background:var(--ac);color:#fff;cursor:pointer;margin-top:10px}
+.btn:disabled{opacity:.45}.btn.s{background:transparent;color:var(--ac);border:2px solid var(--ac)}.btn.nb{width:auto;margin:0;padding:10px 16px;font-size:14px}
+.card{background:var(--cd);border:1px solid var(--ln);border-radius:20px;padding:20px;margin-bottom:14px}
+.mu{color:var(--mu);font-size:14px}.c{text-align:center}.ac{color:var(--ac);font-size:14px}
+.chip{background:var(--bg);border-radius:99px;padding:3px 11px;font-size:12.5px}
+h1,h2,h3{margin:8px 0}.h1{font-size:clamp(38px,9vw,64px);line-height:1.1;margin:14px 0}.h1 span{color:var(--ac)}.h2{font-size:clamp(24px,5vw,34px)}
+.hero2{display:grid;gap:20px;padding:24px;margin-top:14px;border-radius:24px;background:linear-gradient(135deg,#eeeaff,#ffe9f3 60%,#fff4e0);color:#2a2550}.hero2 .mu{color:#5a5680}
+@media(min-width:760px){.hero2{grid-template-columns:1.1fr 1fr;align-items:center}}
+.badge{display:inline-block;background:#fff;border:1px solid #e6e3f5;border-radius:99px;padding:6px 14px;font-size:13px;color:#6f5fc0}
+.slot{border:2px dashed #b9b1e0;border-radius:20px;min-height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#8b82c4;background:#ffffff88;text-align:center;padding:10px;font-size:26px}.slot b{font-size:15px}.slot small{font-size:12px}
+.sl{width:100%;height:100%;object-fit:cover;border-radius:20px;display:block}
+.strip{display:grid;gap:12px;margin:18px 0}@media(min-width:760px){.strip{grid-template-columns:repeat(3,1fr)}}
+.strip div{display:flex;gap:12px;align-items:center;background:var(--cd);border:1px solid var(--ln);border-radius:16px;padding:14px}
+.grid4{display:grid;gap:14px;margin:18px 0}@media(min-width:600px){.grid4{grid-template-columns:1fr 1fr}}@media(min-width:1000px){.grid4{grid-template-columns:repeat(4,1fr)}}
+.tc{border-radius:20px;padding:20px;position:relative}.tc .tn{position:absolute;right:18px;top:18px;font-size:13px}.tc .ic{width:52px;height:52px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:24px;margin-bottom:14px}
+.tc h3,.tc b{color:#2a2550;margin:0}.tc h3{font-size:20px}.tc p{margin:12px 0;font-size:14px;color:#5a5680}.tc small{font-size:13px}
+.cta{display:flex;flex-direction:column;gap:12px;background:#f1effc;color:#2a2550;border-radius:16px;padding:22px;margin:20px 0}.cta p{margin:0;color:#5a5680}
+@media(min-width:760px){.cta{flex-direction:row;align-items:center;justify-content:space-between}.cta .btn{width:auto;margin:0}}
+.banner{display:flex;align-items:center;gap:16px;padding:18px;background:linear-gradient(90deg,#eeeaff,#e3dcf8);border-radius:0 0 20px 20px;color:#2a2550;margin:0 -18px 20px;justify-content:space-between}
+.banner .slot,.banner .sl{width:120px;min-height:64px;height:64px;font-size:16px;flex:none}.banner .slot small,.banner .slot b{display:none}.banner>div:last-child{flex:1}.banner small{display:block;color:#6f5fc0}
+.qw{max-width:720px;margin:auto}.qh{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.pill{border-radius:12px;padding:12px 16px;margin:16px 0 14px;font-size:14px}.qt{font-size:22px;margin:6px 0 18px}
+.op{display:flex;align-items:center;gap:14px;width:100%;text-align:left;padding:16px 18px;margin-bottom:10px;border:1px solid var(--ln);border-radius:14px;background:var(--cd);color:var(--tx);font-size:16px;font-family:inherit;cursor:pointer}
+.op i{width:22px;height:22px;border:2px solid #9a96b8;border-radius:50%;flex:none}.op.on{border-color:var(--ac);background:#f1effc;color:#2a2550}.op.on i{border-color:var(--ac);background:radial-gradient(var(--ac) 45%,#fff 50%)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}.g2 .btn{margin:0}
+.bar{height:10px;background:var(--ln);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ac);border-radius:9px;transition:.3s}
+.m2{margin:14px 0}.m2>div:first-child{display:flex;justify-content:space-between;margin-bottom:6px;font-size:15px}.m2 b{color:var(--ac);font-weight:400}
+.m{display:flex;align-items:center;gap:8px;margin:7px 0;font-size:13px}.m b{width:150px;font-weight:400}.m .bar{flex:1;height:12px}.m u{text-decoration:none;width:42px;text-align:right}
+.hl{border-radius:18px;padding:22px;margin:22px 0 14px;color:#2a2550}.hl h2{margin:6px 0 0;font-size:24px}.hl .slot,.hl .sl{height:150px;min-height:150px;margin-top:14px}
+.tk{list-style:none;padding:0}.tk li{padding-left:28px;position:relative;margin:12px 0}.tk li:before{content:"✓";position:absolute;left:0;color:var(--ac);font-weight:700}
+.proc div{padding:10px 0;opacity:0;animation:f .5s forwards}.proc div:nth-child(2){animation-delay:.6s}.proc div:nth-child(3){animation-delay:1.2s}.proc div:nth-child(4){animation-delay:1.8s}
+ul{padding-left:20px}.ck{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--ln);cursor:pointer}.ck input{width:22px;height:22px;accent-color:var(--ac);flex:none}
+.st{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:14px}.st div{background:var(--cd);border:1px solid var(--ln);border-radius:16px;padding:10px;text-align:center}.st b{font-size:22px;display:block}
+.st div:nth-child(1){border-top:5px solid #3b8fb0}.st div:nth-child(2){border-top:5px solid #e3ae3b}.st div:nth-child(3){border-top:5px solid #3aa876}
+.don{width:140px;height:140px;border-radius:50%;margin:auto;-webkit-mask:radial-gradient(circle,transparent 42%,#000 43%);mask:radial-gradient(circle,transparent 42%,#000 43%)}
+.lgd{display:flex;align-items:center;gap:8px;font-size:14px;margin:5px 0}.lgd i{width:12px;height:12px;border-radius:4px;flex:none}
+textarea{display:none;width:100%;height:120px;margin-top:8px;border-radius:12px;border:1px solid var(--ln);background:var(--cd);color:var(--tx)}
+body,.nav,.card{transition:background .3s,color .3s}
+.btn,.op{position:relative;overflow:hidden;transition:transform .12s,filter .15s,background .2s,border-color .2s}
+.btn:not(:disabled):hover{filter:brightness(1.08)}
+.btn:active:not(:disabled),.op:active{transform:scale(.96)}
+.rp{position:absolute;border-radius:50%;background:currentColor;opacity:.28;transform:scale(0);animation:rp .6s ease-out forwards;pointer-events:none}
+@keyframes rp{to{transform:scale(1);opacity:0}}
+@keyframes pop{0%{transform:scale(.96)}60%{transform:scale(1.025)}100%{transform:scale(1)}}
+.bt{position:fixed;bottom:-30px;pointer-events:none;z-index:99;animation:bu 1.6s ease-out forwards}
+@keyframes bu{to{transform:translateY(-75vh) rotate(40deg);opacity:0}}
+/* ---- easing tokens: pick by purpose ---- */
+:root{--e-out:cubic-bezier(.22,1,.36,1);--e-in:cubic-bezier(.5,0,.75,0);--e-spring:cubic-bezier(.34,1.25,.64,1);--e-io:cubic-bezier(.65,0,.35,1)}
+/* ---- soft motion pass: rounder shapes, spring release, staggered entrance ---- */
+.btn,.op{border-radius:16px}.card{border-radius:24px}
+.btn,.op{transition:transform .8s var(--e-spring),filter .26s,box-shadow .33s,background .5s var(--e-out),border-color .5s var(--e-out),color .4s,opacity .5s var(--e-out)}
+.btn:active:not(:disabled),.op:active{transform:scale(.975);transition-duration:.1s}
+.btn:not(.s):not(.nb):not(:disabled){box-shadow:0 8px 18px -8px var(--ac)}
+.tc,.strip div{transition:transform .59s var(--e-spring),box-shadow .39s,background .45s}
+.hero2,.cta{transition:background .45s,color .45s}
+@media(hover:hover){.btn:not(:disabled):hover{transform:translateY(-2px)}.op:hover{border-color:var(--ac);transform:translateX(4px)}.tc:hover{transform:translateY(-4px);box-shadow:0 14px 28px -14px rgba(60,50,120,.35)}}
+.rp{opacity:.18;animation-duration:1.04s;animation-timing-function:var(--e-out)}
+@keyframes pop{0%{transform:scale(.94)}}
+@keyframes dot{0%{transform:scale(.4)}}
+@keyframes su{from{opacity:0;transform:translateY(14px)}}
+section.on{animation:su .95s var(--e-out)}
+#types .tc,.strip div{animation:su .78s var(--e-out) both}
+#types .tc:nth-child(2),.strip div:nth-child(2){animation-delay:.1s}
+#types .tc:nth-child(3),.strip div:nth-child(3){animation-delay:.21s}
+#types .tc:nth-child(4){animation-delay:.31s}
+.qw.in .qt,.qw.in .op{animation:su .85s var(--e-out) both}
+.qw.in .op:nth-of-type(1){animation-delay:.1s}.qw.in .op:nth-of-type(2){animation-delay:.2s}.qw.in .op:nth-of-type(3){animation-delay:.3s}.qw.in .op:nth-of-type(4){animation-delay:.4s}.qw.in .op:nth-of-type(5){animation-delay:.5s}
+.m2 .bar i,.m .bar i{animation:gr 1.43s var(--e-out) both}
+@keyframes gr{from{width:0}}
+.bar i.pg{animation:gp .78s var(--e-out)}
+@keyframes gp{from{width:var(--f,0%)}}
+.sl{animation:fl 6.5s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-6px)}}
+.bt{animation:bu 2.86s var(--e-out) forwards}
+@keyframes bu{0%{opacity:0;transform:translate(0,0) scale(.5)}12%{opacity:1}100%{opacity:0;transform:translate(var(--dx),-75vh) rotate(var(--r)) scale(1)}}
+section.on.out{animation:so .32s var(--e-in) forwards}
+@keyframes so{to{opacity:0;transform:translateY(-8px)}}
+.bar i{transition:width .65s var(--e-out)}
+.proc div{animation-timing-function:var(--e-out)}
+.sl{animation-timing-function:var(--e-io)}
+body,.nav,.card{transition-timing-function:var(--e-io)}
+#v-quiz .bar{scroll-margin-top:14px}
+.op i{position:relative;transition:border-color .4s var(--e-out)}
+.op i::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--ac);transform:scale(0);opacity:0;transition:transform .5s var(--e-out),opacity .3s var(--e-out)}
+.op.on i{background:none!important}
+.op.on i::after{transform:scale(1);opacity:1}
+/* theme switch: circle reveal (View Transitions) */
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+::view-transition-old(root){z-index:1}::view-transition-new(root){z-index:2}
+.vt *:not(.tgl):not(.k){transition:none!important}
+/* ---- compact sizing: smaller type & spacing, pill buttons, bottom tab bar ---- */
+:root{--bg:#f6f2fd;--ln:#e6dff6;--ac:#8b79d6}
+.hero2{background:linear-gradient(135deg,#ece6fb,#f8e8f6 60%,#fdf1e6)}
+.badge{color:#7a68c8}
+.op.on,.cta{background:#efe9fc}
+.banner{background:linear-gradient(90deg,#efe9fc,#e4dbf8)}
+.tgl{position:relative;width:54px;height:30px;border-radius:99px;border:0;padding:0;cursor:pointer;flex:none;background:#e3dbf7;box-shadow:inset 0 0 0 1px #d3c8f2;transition:background .5s var(--e-out)}
+.tgl .k{position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:14px;line-height:1;box-shadow:0 2px 6px rgba(80,60,150,.25);transition:transform .55s var(--e-spring)}
+.tgl[aria-checked=true]{background:var(--ac);box-shadow:none}
+.tgl[aria-checked=true] .k{transform:translateX(24px)}
+body{font-size:15px;line-height:1.55}
+main{padding:0 16px 84px}
+.nav{padding:10px 16px}.lg0{font-size:14px}.lg0 i,.strip i{width:36px;height:36px}
+.h1{font-size:clamp(28px,7.5vw,44px);line-height:1.15;margin:10px 0}
+.h2{font-size:clamp(19px,5vw,26px)}
+h3{font-size:16px}
+.hero2{padding:18px;gap:14px;margin-top:10px;border-radius:22px}
+.hero2 h2{font-size:17px;font-weight:500}
+.badge{font-size:12px;padding:4px 12px}
+.btn{border-radius:999px;font-size:15px;padding:13px 18px}
+.btn.nb{padding:8px 14px;font-size:13px}
+@media(max-width:759px){.hero2 .btn{width:100%!important}.nsd{display:none}}
+@media(min-width:760px){main{padding-bottom:40px}}
+.card{padding:16px;border-radius:20px}
+.strip{gap:8px;margin:12px 0}.strip div{padding:10px;border-radius:14px;font-size:14px}
+.tc{padding:16px}.tc .ic{width:40px;height:40px;font-size:20px;margin-bottom:10px}.tc h3{font-size:17px}.tc p{margin:8px 0;font-size:13px}
+.cta{padding:16px;margin:14px 0}.cta h3{font-size:16px}
+.slot{min-height:150px;font-size:22px}
+.banner{padding:12px 16px;margin:0 -16px 14px}.banner .slot,.banner .sl{height:48px;min-height:48px;width:90px}
+.qt{font-size:18px;margin:4px 0 14px}.qh h2{font-size:17px}
+.op{padding:13px 16px;font-size:15px;margin-bottom:8px}
+.pill{padding:9px 14px;margin:12px 0 10px;font-size:13px}
+.hl{padding:16px;margin:16px 0 10px}.hl h2{font-size:20px}.hl .slot,.hl .sl{height:130px;min-height:130px}
+.m2{margin:10px 0}.m2>div:first-child{font-size:14px}
+.st b{font-size:20px}.st div{padding:8px}
+.don{width:120px;height:120px}
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;background:var(--cd);border-top:1px solid var(--ln);padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px))}
+.tabbar button{flex:1;border:0;background:none;color:var(--mu);font:inherit;font-size:11.5px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 0;cursor:pointer;transition:color .4s var(--e-out)}
+.tabbar b{font-size:19px;font-weight:400;line-height:1;transition:transform .5s var(--e-spring)}
+.tabbar .on{color:var(--ac)}.tabbar .on b{transform:translateY(-2px) scale(1.1)}
+@media(min-width:760px){.tabbar{display:none}}
+/* ---- pastel primary buttons (both themes): soft gradient + dark-purple text ---- */
+.btn:not(.s){background:linear-gradient(135deg,#d9ccf7,#f6cde8);color:#45368a}
+.btn:not(.s):not(.nb):not(:disabled){box-shadow:0 8px 18px -8px rgba(150,120,220,.55)}
+.btn:not(.s):not(:disabled):hover{filter:saturate(1.2) brightness(.98)}
+:root[data-theme="dark"] .btn:not(.s){background:linear-gradient(135deg,#bfaef5,#eab8e0);color:#2b2360}
+:root[data-theme="dark"] .btn:not(.s):not(.nb):not(:disabled){box-shadow:0 8px 20px -8px rgba(190,160,245,.45)}
+/* ---- circle-scale questions: answered -> greyscale ---- */
+:root{--gy:#a9aec2;--gyf:#8f94aa;--lo:#5fbf9f;--hi:var(--ac)}
+:root[data-theme="dark"]{--gy:#6d6a9c;--gyf:#8683b3;--lo:#6fd0b0}
+.qi{padding:18px 0 14px;border-top:1px solid var(--ln)}
+.qq{font-size:17px;font-weight:500;margin:0 0 16px;line-height:1.45;transition:color .5s var(--e-out)}
+.qi.done .qq{color:var(--mu)}
+.sc{display:flex;justify-content:space-between;align-items:center}
+.ci{--c:var(--gy);flex:none;width:var(--s);height:var(--s);border-radius:50%;border:2.5px solid var(--c);background:transparent;padding:0;cursor:pointer;position:relative;transition:background .35s var(--e-out),border-color .5s var(--e-out),transform .45s var(--e-spring)}
+.ci.lo{--c:var(--lo)}.ci.hi{--c:var(--hi)}.ci.md{--c:var(--gy)}
+.ci::after{content:"✓";position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:calc(var(--s)*.42);font-weight:700;opacity:0;transform:scale(.4);transition:opacity .3s,transform .45s var(--e-spring)}
+.ci.on{background:var(--c)}.ci.on::after{opacity:1;transform:scale(1)}
+.ci:active{transform:scale(.92);transition-duration:.1s}
+@media(hover:hover){.ci:hover{background:color-mix(in srgb,var(--c) 16%,transparent)}.ci.on:hover{background:var(--c)}}
+.qi.done .ci{--c:var(--gy)}.qi.done .ci.on{background:var(--gyf);border-color:var(--gyf)}
+.sl2{display:flex;justify-content:space-between;margin-top:10px;font-size:13.5px;line-height:1.3}
+.sl2 .lo{color:var(--lo)}.sl2 .hi{color:var(--ac)}
+.qi.done .sl2 span{color:var(--mu)}
+.sl2 span{transition:color .5s var(--e-out)}
+.qw.in .qi{animation:su .6s var(--e-out) both;animation-delay:var(--d,0s)}
+/* progress that stays visible while scrolling */
+.stk{position:sticky;top:env(safe-area-inset-top,0px);z-index:15;background:var(--bg);padding:10px 0 9px;margin-top:4px;border-bottom:1px solid var(--ln)}
+.stk-r{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+.cat{border-radius:12px;padding:5px 12px;font-size:12.5px;line-height:1.3}
+:root[data-theme="dark"] .cat{background:var(--cd)!important;color:var(--tx)!important}
+.stk .ac{font-weight:600;white-space:nowrap}
+.stk+.qi{border-top:0}
+/* optional info pages (demo: answers are not stored) */
+.chs{display:flex;flex-wrap:wrap;gap:8px}
+.ch{border:1px solid var(--ln);background:var(--cd);color:var(--tx);border-radius:999px;padding:9px 14px;font:inherit;font-size:14px;line-height:1.3;cursor:pointer;transition:background .35s var(--e-out),border-color .35s var(--e-out),transform .4s var(--e-spring)}
+.ch:active{transform:scale(.97);transition-duration:.1s}
+.ch.on{background:#efe9fc;border-color:var(--ac);color:#2a2550}
+@media(hover:hover){.ch:hover{border-color:var(--ac)}}
+.inp{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1px solid var(--ln);border-radius:14px;background:var(--cd);color:var(--tx);font:inherit;font-size:15px;transition:border-color .3s var(--e-out),box-shadow .3s var(--e-out)}
+.inp:focus{outline:none;border-color:var(--ac);box-shadow:0 0 0 3px #8b79d633}
+textarea.inp{display:block;height:96px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+:root[data-theme="dark"] .ch.on{background:#2c2960;color:var(--tx)}
+/* checkbox / select / product-style cards / reveal */
+.cb{position:relative;display:flex;gap:12px;align-items:flex-start;cursor:pointer;line-height:1.5}
+.cb input{position:absolute;opacity:0;pointer-events:none}
+.cb .bx{flex:none;width:24px;height:24px;margin-top:1px;border:2px solid var(--gy);border-radius:7px;display:grid;place-items:center;transition:background .3s var(--e-out),border-color .3s var(--e-out),transform .4s var(--e-spring)}
+.cb .bx::after{content:"✓";color:#fff;font-size:15px;font-weight:700;transform:scale(0);transition:transform .4s var(--e-spring)}
+.cb input:checked+.bx{background:var(--ac);border-color:var(--ac)}
+.cb input:checked+.bx::after{transform:scale(1)}
+.cb input:focus-visible+.bx{box-shadow:0 0 0 3px #8b79d655}
+.cb:active .bx{transform:scale(.9)}
+select.inp{appearance:none;-webkit-appearance:none;padding-right:42px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1.5l6 6 6-6' fill='none' stroke='%238b8aa8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;cursor:pointer}
+.qw.in .opl .op{animation:none}
+.opl .op:last-child{margin-bottom:0}
+.rv{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .55s var(--e-out),opacity .4s var(--e-out)}
+.rv.on{grid-template-rows:1fr;opacity:1}
+.rv>div{overflow:hidden;min-height:0}
+.pcs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pc{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;text-align:left;padding:14px;border:1.5px solid var(--ln);border-radius:18px;background:var(--cd);color:var(--tx);font:inherit;cursor:pointer;transition:border-color .35s var(--e-out),background .35s var(--e-out),transform .5s var(--e-spring),box-shadow .35s var(--e-out)}
+.pc .pi{width:44px;height:44px;border-radius:14px;background:#efe9fc;display:grid;place-items:center;font-size:24px;margin-bottom:2px}
+.pc b{font-size:14.5px;font-weight:600;line-height:1.3}
+.pc small{font-size:12px;color:var(--mu);line-height:1.35}
+.pc::after{content:"✓";position:absolute;top:10px;right:10px;width:22px;height:22px;border-radius:50%;background:var(--ac);color:#fff;font-size:12px;font-weight:700;display:grid;place-items:center;transform:scale(0);transition:transform .45s var(--e-spring)}
+.pc.on{border-color:var(--ac);background:#f6f2fe;box-shadow:0 10px 22px -14px rgba(120,95,210,.65);transform:translateY(-2px)}
+.pc.on::after{transform:scale(1)}
+.pc:active{transform:scale(.97);transition-duration:.1s}
+@media(hover:hover){.pc:hover{border-color:var(--ac)}}
+:root[data-theme="dark"] .pc .pi{background:#2c2960}
+:root[data-theme="dark"] .pc.on{background:#2a2758}
+/* ---- adapted from the reference landing page ---- */
+.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.15em;flex:none}
+.i.f{fill:currentColor}
+.lg0 i,.strip i{color:var(--ac)}
+.lg0 i .i{width:18px;height:18px}.strip i .i{width:19px;height:19px}
+@media(max-width:759px){.ntag{display:none}}
+.hero2.dream{position:relative;overflow:hidden;isolation:isolate;display:flex;align-items:center;min-height:300px;padding:26px 22px}
+.dsky{position:absolute;inset:0;z-index:-1}
+.dsky svg{display:block}
+.dimg{width:100%;height:100%;object-fit:cover;display:block}
+.dc{position:relative;width:100%;max-width:540px}
+.dc .badge{background:#ffffffa6;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;margin:14px 0 0}
+.meta span{display:inline-flex;align-items:center;gap:6px}
+.s1{stop-color:#cfc6f7}.s2{stop-color:#f2d4ee}.s3{stop-color:#fde9dd}
+.cf{fill:#fff;opacity:.88}
+.tw{animation:tw 3.6s var(--e-io) infinite;transform-box:fill-box;transform-origin:center}
+@keyframes tw{50%{opacity:.25;transform:scale(.7)}}
+.dr{animation:dr 11s var(--e-io) infinite}
+@keyframes dr{50%{transform:translateX(16px)}}
+:root[data-theme="dark"] .s1{stop-color:#1b1946}:root[data-theme="dark"] .s2{stop-color:#2b2566}:root[data-theme="dark"] .s3{stop-color:#43306f}
+:root[data-theme="dark"] .cf{fill:#8f86d8;opacity:.32}
+:root[data-theme="dark"] .dc .badge{background:#15133a99;color:#b7acff}
+.strip{border-top:1px solid var(--ln);border-bottom:1px solid var(--ln);padding:14px 0;margin:20px 0}
+.strip div{background:none;border:0;border-radius:0;padding:0}
+@media(min-width:760px){.strip div+div{border-left:1px solid var(--ln);padding-left:26px}}
+.tc .ic{animation:fl 5.5s var(--e-io) infinite}
+.tc:nth-child(2) .ic{animation-delay:-1.4s}.tc:nth-child(3) .ic{animation-delay:-2.8s}.tc:nth-child(4) .ic{animation-delay:-4.1s}
+@media(min-width:600px){.cta{flex-direction:row;align-items:center;justify-content:space-between}}
+.ft{display:flex;flex-direction:column;align-items:center;gap:6px;padding:18px 0 4px;font-size:12.5px;color:var(--mu);text-align:center}
+.ft span{display:inline-flex;align-items:center;gap:6px}
+@media(min-width:600px){.ft{flex-direction:row;justify-content:space-between}}
+/* icons that replaced emoji */
+.tc .ic,.pc .pi{color:var(--ac)}
+.tgl .k{color:#6f5fc0}
+/* dashboard: calm, editorial, evidence-led (scoped) */
+#v-dash{--cw:#a8650f;--cs:#35679a;--ct:#8c4a73;--ce:#3f7d5c;--serif:'Noto Serif Thai','Noto Serif',Georgia,serif}
+:root[data-theme="dark"] #v-dash{--cw:#e0a247;--cs:#7fb0e0;--ct:#d49bbd;--ce:#86c4a2}
+#v-dash h2{font:700 24px/1.3 var(--serif);margin:0}
+#v-dash h3{font:700 19px/1.4 var(--serif);margin:0 0 14px}
+.dhh{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px;padding:6px 0 14px}
+.dhs{display:inline-flex;border:1px solid var(--ln);border-radius:8px;overflow:hidden;background:var(--cd)}
+.dhs button{border:0;background:none;color:var(--tx);padding:8px 12px;font:inherit;font-size:13.5px;cursor:pointer;border-right:1px solid var(--ln)}
+.dhs button:last-child{border-right:0}.dhs button[aria-pressed=true]{background:var(--tx);color:var(--bg)}
+.dhst{margin:0 0 22px;padding:10px 14px;border-left:3px solid var(--ac);background:var(--cd);border-radius:0 8px 8px 0;font-size:14.5px}
+.dhst.demo{border-left-color:var(--cw)}
+.dhk{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 22px}
+.dhn{font:500 clamp(68px,18vw,108px)/.9 var(--serif);letter-spacing:-.02em}.dhn small{font-size:.4em;margin-left:2px}
+.dhl{flex:1 1 240px;margin:0 0 6px;font-size:18px;line-height:1.55;max-width:36ch}.dhl b{font:700 1em var(--serif)}.dhl span{display:block;color:var(--mu);font-size:14.5px;margin-top:4px}
+.dhm{display:flex;flex-wrap:wrap;gap:10px 30px;margin:22px 0 0}.dhm dt{color:var(--mu);font-size:13.5px}.dhm dd{margin:0;font:500 26px/1.3 var(--serif)}.dhm dd small{font:400 12.5px/1 inherit;font-family:inherit;color:var(--mu);margin-left:4px}
+.dhx{border-top:1px solid var(--ln);padding:26px 0 8px;margin-top:26px}
+.dhr{list-style:none;margin:0;padding:0}
+.dhr li{display:grid;grid-template-columns:minmax(0,15rem) 1fr 9rem;gap:10px 16px;align-items:center;padding:11px 0;border-bottom:1px solid var(--ln)}
+.dhr.sc li{grid-template-columns:minmax(0,11rem) 1fr 6.2rem 5.6rem}
+.dnm{display:flex;align-items:baseline;gap:8px;line-height:1.45}.dnm i{flex:none;width:10px;height:10px;border-radius:2px;transform:translateY(1px)}
+.dht{position:relative;height:14px;background:color-mix(in srgb,var(--ln) 55%,transparent);border-radius:3px}
+.dht b{display:block;height:100%;border-radius:3px}
+.dht u{position:absolute;top:-4px;bottom:-4px;width:0;border-left:2px dashed var(--tx);opacity:.55}
+.dhv{text-align:right;white-space:nowrap}.dhv b{font:600 1em var(--serif)}.dhv small{color:var(--mu);font-size:12.5px;margin-right:2px}
+.dhg{margin:12px 0 0;color:var(--mu);font-size:13.5px}
+.dha{display:flex;flex-wrap:wrap;gap:8px}.dha .btn{width:auto;margin:0}
+.dhnote{color:var(--mu);font-size:13.5px;max-width:70ch;padding:18px 0 6px;border-top:1px solid var(--ln);margin:26px 0 0}
+@media(max-width:640px){.dhr li,.dhr.sc li{grid-template-columns:1fr auto}.dhr .dnm,.dhr .dht{grid-column:1/-1}.dhr .dht{order:2}.dhr .dhv{text-align:left}.dhr .dhv+.dhv{text-align:right}.dhr:not(.sc) .dhv{grid-column:1/-1}}
+/* types page */
+.tyh{text-align:center;padding:10px 0 26px}.tyh h2{font-size:26px;margin:0 0 8px}.tyh .mu{max-width:46ch;margin:0 auto 16px}.tyh .btn{width:auto}
+.tyz{padding-top:34px}
+.tyb{position:relative;display:grid;gap:18px;justify-items:center;text-align:left;margin:-14px -16px 0;padding:44px 20px 34px;background:var(--bk);color:#2a2550;clip-path:polygon(0 14px,100% 0,100% 100%,0 100%)}
+.tyb.r{clip-path:polygon(0 0,100% 14px,100% 100%,0 100%)}
+.tyb:first-of-type{margin-top:0}
+.tyi{width:min(220px,62%);transition:transform .6s var(--e-spring)}
+.tyi .slot{min-height:170px}
+.tyt{max-width:520px;width:100%}
+.tyn{display:inline-block;font:600 13px/1 var(--serif,inherit);color:var(--ck);letter-spacing:.06em}
+.tyt h3{font-size:22px;line-height:1.3;margin:6px 0 8px;color:inherit}
+.tyt h3 small{display:block;font-size:15px;font-weight:500;opacity:.75;margin-top:2px}
+.tyt p{margin:0 0 12px;line-height:1.65}
+.tyf{margin:0 0 16px;padding-left:18px;font-size:14.5px;line-height:1.6}.tyf li+li{margin-top:4px}
+.tyb .btn.s{width:auto;background:#ffffffb3;border-color:#2a255033;color:#2a2550}
+@media(min-width:700px){.tyb{grid-template-columns:1fr 1.3fr;align-items:center;gap:36px;padding:56px 40px 46px;justify-items:stretch}.tyb.r .tyi{order:2}.tyi{justify-self:center}}
+@media(hover:hover){.tyb:hover .tyi{transform:translateY(-6px) rotate(-2deg)}}
+:root[data-theme="dark"] .tyb{background:color-mix(in srgb,var(--ck) 16%,var(--bg));color:var(--tx)}
+:root[data-theme="dark"] .tyb .btn.s{background:var(--cd);border-color:var(--ln);color:var(--tx)}
+.ph{display:none}
+/* phone: art becomes its own band above the text (moon no longer sits under the heading) */
+@media(max-width:759px){
+.hero2.dream{flex-direction:column;align-items:stretch;min-height:0;padding:0 22px 24px;background:linear-gradient(180deg,#cfc6f7 0%,#f2d4ee 58%,#fde9dd 100%)}
+:root[data-theme="dark"] .hero2.dream{background:linear-gradient(180deg,#1b1946 0%,#2b2566 58%,#43306f 100%)}
+.dsky{position:relative;inset:auto;z-index:0;order:-1;height:clamp(150px,30vw,230px);margin:0 -22px 14px}
+.dsky svg{height:100%}
+.skybg{display:none}
+.moon{transform:translate(-90px,40px)}
+.c1{transform:translate(390px,205px)}.c2{transform:translate(240px,215px) scale(.65)}.c3{transform:translate(432px,136px)}
+.dsky{-webkit-mask-image:linear-gradient(#000 76%,transparent);mask-image:linear-gradient(#000 76%,transparent)}
+.ph{display:inline}
+.dc{max-width:none}
+}
+/* device tiers: phone <=759 = bottom tab bar + stacked hero | tablet/desktop >=760 = top menu + side-by-side hero */
+.topnav{display:none}
+@media(min-width:760px){.topnav{display:flex;gap:2px;margin:0 auto 0 14px}}
+.topnav button{border:0;background:none;color:var(--mu);font:inherit;font-size:14.5px;padding:8px 13px;border-radius:999px;cursor:pointer;transition:color .3s var(--e-out),background .3s var(--e-out)}
+.topnav button.on{color:var(--ac);background:#efe9fc;font-weight:600}
+@media(hover:hover){.topnav button:hover{color:var(--tx)}.topnav button.on:hover{color:var(--ac)}}
+:root[data-theme="dark"] .topnav button.on{background:#2c2960}
+@media(max-width:1099px){.ntag{display:none!important}}
+@media(min-width:1024px){.hero2.dream{min-height:340px;padding:40px 44px}.dc{max-width:600px}}
+@media(prefers-reduced-motion:reduce){*,*:before{animation:none!important;transition:none!important}}
+:root[data-theme="dark"]{color-scheme:dark;--ac:#8a7bea}
+:root[data-theme="light"]{color-scheme:light}
+:root[data-theme="dark"] .hero2{background:linear-gradient(135deg,#2a2656,#3b2350 60%,#3a2f2d);color:var(--tx)}
+:root[data-theme="dark"] .hero2 .mu{color:var(--mu)}
+:root[data-theme="dark"] .badge{background:var(--cd);border-color:var(--ln);color:#b7acff}
+:root[data-theme="dark"] .cta{background:var(--cd);color:var(--tx)}
+:root[data-theme="dark"] .cta p{color:var(--mu)}
+:root[data-theme="dark"] .banner{background:linear-gradient(90deg,#2a2656,#332d68);color:var(--tx)}
+:root[data-theme="dark"] .banner small{color:#b7acff}
+:root[data-theme="dark"] .op.on{background:#2c2960;color:var(--tx)}
+:root[data-theme="dark"] .op.on i{background:radial-gradient(var(--ac) 45%,#2c2960 50%)}
+:root[data-theme="dark"] .slot{background:#ffffff10;border-color:#5a5496;color:#a9a6d0}
+:root[data-theme="dark"] .lg0 i,:root[data-theme="dark"] .strip i,:root[data-theme="dark"] .tc .ic{background:#2c2960}
+:root[data-theme="dark"] .tc,:root[data-theme="dark"] .hl,:root[data-theme="dark"] .pill{background:var(--cd)!important;border:1px solid var(--ln);color:var(--tx)!important}
+:root[data-theme="dark"] .tc h3,:root[data-theme="dark"] .tc b,:root[data-theme="dark"] .hl h2{color:var(--tx)}
+:root[data-theme="dark"] .tc p{color:var(--mu)}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+<symbol id="i-coffee" viewBox="0 0 24 24"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+<symbol id="i-bed" viewBox="0 0 24 24"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="i-list" viewBox="0 0 24 24"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+<symbol id="i-school" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-build" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h.01M15 7h.01M9 11h.01M15 11h.01M9 15h.01M15 15h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol>
+<symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+</defs></svg>
+<div class="nav"><div class="lg0"><i><svg class="i f"><use href="#i-moon"/></svg></i><div>Long life sleep<br><span class="mu">& well being</span></div></div><nav class="topnav" aria-label="เมนูหลัก"><button class="on" aria-current="page" onclick="go('v-home')">หน้าแรก</button><button onclick="tabQ()">ทดสอบ</button><button onclick="showTypes()">ประเภท</button><button onclick="tips()">คำแนะนำ</button><button onclick="dash()">สถิติ</button></nav><span class="mu ntag">พื้นที่เล็ก ๆ เพื่อการนอนที่ดีของชาวมหิดล</span><div style="display:flex;gap:8px;align-items:center"><button class="tgl" id="thm" role="switch" aria-checked="false" aria-label="โหมดกลางคืน" onclick="tg()"><span class="k"><svg class="i"><use href="#i-sun"/></svg></span></button><button class="btn nb nsd" onclick="start()">เริ่มแบบทดสอบ</button></div></div>
+<main>
+<section id="v-home" class="on">
+<div class="hero2 dream"><div class="dsky" id="hero-art" aria-hidden="true"><svg viewBox="0 0 480 320" preserveAspectRatio="xMaxYMid slice" width="100%" height="100%"><defs>
+<linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop class="s1" offset="0"/><stop class="s2" offset=".62"/><stop class="s3" offset="1"/></linearGradient>
+<radialGradient id="gl"><stop offset="0" stop-color="#fff6d8" stop-opacity=".95"/><stop offset="1" stop-color="#fff6d8" stop-opacity="0"/></radialGradient>
+<mask id="mn"><rect width="480" height="320" fill="#fff"/><circle cx="398" cy="70" r="30" fill="#000"/></mask></defs>
+<rect class="skybg" width="480" height="320" fill="url(#sk)"/>
+<g class="moon"><circle cx="378" cy="86" r="84" fill="url(#gl)"/>
+<circle cx="376" cy="86" r="36" fill="#fff6d8" mask="url(#mn)"/></g>
+<g fill="#fff"><path class="tw" d="M312 44l2.4 6.4 6.4 2.4-6.4 2.4-2.4 6.4-2.4-6.4-6.4-2.4 6.4-2.4z"/><path class="tw" style="animation-delay:-1.2s" d="M436 132l1.8 4.8 4.8 1.8-4.8 1.8-1.8 4.8-1.8-4.8-4.8-1.8 4.8-1.8z"/><path class="tw" style="animation-delay:-2.1s" d="M268 118l1.6 4.2 4.2 1.6-4.2 1.6-1.6 4.2-1.6-4.2-4.2-1.6 4.2-1.6z"/>
+<circle class="tw" style="animation-delay:-.6s" cx="452" cy="40" r="2"/><circle class="tw" style="animation-delay:-1.7s" cx="340" cy="150" r="1.8"/><circle class="tw" style="animation-delay:-2.6s" cx="250" cy="60" r="1.6"/><circle class="tw" style="animation-delay:-.2s" cx="420" cy="190" r="1.6"/></g>
+<g class="ph" fill="#fff"><path class="tw" style="animation-delay:-.9s" d="M88 106l2.2 5.8 5.8 2.2-5.8 2.2-2.2 5.8-2.2-5.8-5.8-2.2 5.8-2.2z"/><path class="tw" style="animation-delay:-1.9s" d="M176 168l1.6 4.2 4.2 1.6-4.2 1.6-1.6 4.2-1.6-4.2-4.2-1.6 4.2-1.6z"/><circle class="tw" style="animation-delay:-.4s" cx="150" cy="112" r="1.8"/><circle class="tw" style="animation-delay:-2.3s" cx="44" cy="170" r="1.6"/><circle class="tw" style="animation-delay:-1.4s" cx="206" cy="128" r="1.5"/></g>
+<g class="ph" transform="translate(92 214)"><g class="dr cf" style="animation-delay:-2s"><ellipse rx="44" ry="14"/><ellipse cx="-16" cy="-9" rx="20" ry="15"/><ellipse cx="12" cy="-13" rx="22" ry="17"/></g></g>
+<g class="c1" transform="translate(396 262)"><g class="dr cf"><ellipse rx="64" ry="20"/><ellipse cx="-26" cy="-12" rx="30" ry="22"/><ellipse cx="18" cy="-20" rx="34" ry="26"/></g></g>
+<g class="c2" transform="translate(250 292)"><g class="dr cf" style="animation-delay:-3s"><ellipse rx="56" ry="17"/><ellipse cx="-20" cy="-10" rx="26" ry="19"/><ellipse cx="16" cy="-17" rx="28" ry="22"/></g></g>
+<g class="c3" transform="translate(450 190)"><g class="dr cf" style="animation-delay:-5s"><ellipse rx="40" ry="13"/><ellipse cx="-14" cy="-8" rx="19" ry="14"/><ellipse cx="12" cy="-12" rx="20" ry="16"/></g></g></svg></div><div class="dc"><span class="badge">สำหรับนักศึกษามหาวิทยาลัยมหิดล ชั้นปีที่ 1</span>
+<h1 class="h1">Long life sleep<br><span>& well being</span></h1>
+<h2>คืนที่ดี เริ่มจากเข้าใจการนอนของเรา</h2>
+<p class="mu">เรียนหนัก เลื่อนจอดึก หรือมีเรื่องให้คิดก่อนนอน? มาทำความรู้จักพฤติกรรมการนอนของตัวเอง แล้วค่อย ๆ เปลี่ยนคืนเหนื่อยล้า ให้เป็นคืนพักใจ</p>
+<button class="btn" style="width:auto" onclick="start()">เริ่มทำแบบทดสอบ</button>
+<p class="mu meta"><span><svg class="i "><use href="#i-heart"/></svg> ไม่มีคำตอบถูกหรือผิด</span><span><svg class="i "><use href="#i-shield"/></svg> ไม่ต้องลงทะเบียน</span></p></div></div>
+<div class="strip"><div><i><svg class="i "><use href="#i-book"/></svg></i><span><b>สำรวจตัวเอง</b><br><span class="mu">ทบทวนพฤติกรรมการนอนในแต่ละวัน</span></span></div><div><i><svg class="i "><use href="#i-spark"/></svg></i><span><b>รู้จักสไตล์การนอน</b><br><span class="mu">ค้นหาว่าคุณใกล้เคียงกับสายไหน</span></span></div><div><i><svg class="i "><use href="#i-heart"/></svg></i><span><b>เริ่มดูแลตัวเอง</b><br><span class="mu">ก้าวเล็ก ๆ สู่การนอนและสุขภาวะที่ดี</span></span></div></div>
+<div class="c"><span class="ac">ทุกคนมีเรื่องราวก่อนนอนของตัวเอง</span><h2 class="h2">คุณเป็นนักนอนสายไหน?</h2><p class="mu">ลองมองดู 4 สไตล์การนอน แล้วมาค้นหาสไตล์ของคุณไปด้วยกัน</p></div>
+<div id="types" class="grid4"></div>
+<p class="mu c"><a href="#" style="color:var(--ac)" onclick="showTypes();return false">ดูรายละเอียดของทั้ง 4 สไตล์</a></p>
+<p class="mu c"><svg class="i "><use href="#i-shield"/></svg> แบบทดสอบนี้เพื่อการสำรวจตัวเอง ไม่ใช่การวินิจฉัยทางการแพทย์</p>
+<div class="cta"><div><h3>ให้คืนนี้เป็นจุดเริ่มต้นของการดูแลตัวเอง</h3><p>เพราะการพักผ่อนที่ดี เป็นส่วนหนึ่งของชีวิตมหาวิทยาลัยที่มีความสุข</p></div><button class="btn" onclick="start()">เริ่มทำแบบทดสอบ</button></div>
+<p class="mu c"><a href="#" style="color:inherit" onclick="dash();return false">ดู Dashboard ภาพรวม</a></p>
+<footer class="ft"><span><svg class="i f"><use href="#i-moon"/></svg> Long life sleep &amp; well being</span><span>สร้างด้วยความใส่ใจ เพื่อชาวมหิดลปี 1 <svg class="i f" style="color:#e58aaf"><use href="#i-heart"/></svg></span></footer>
+</section>
+<section id="v-quiz"></section>
+<section id="v-proc"><div class="card proc"><h2>กำลังประมวลผล…</h2>
+<div>บันทึกคำตอบลงฐานข้อมูล</div><div>คำนวณคะแนน 4 ด้าน (0–100)</div><div>Rule-based: เลือกด้านที่คะแนนสูงสุด</div><div>จำแนก Sleep Type เสร็จแล้ว</div></div></section>
+<section id="v-res"></section>
+<section id="v-types"></section>
+<section id="v-tips"></section>
+<section id="v-dash"></section>
+</main>
+<nav class="tabbar"><button class="on" onclick="go('v-home')"><b><svg class="i"><use href="#i-home"/></svg></b>หน้าแรก</button><button onclick="tabQ()"><b><svg class="i"><use href="#i-list"/></svg></b>ทดสอบ</button><button onclick="showTypes()"><b><svg class="i"><use href="#i-grid"/></svg></b>ประเภท</button><button onclick="tips()"><b><svg class="i"><use href="#i-check"/></svg></b>คำแนะนำ</button><button onclick="dash()"><b><svg class="i"><use href="#i-chart"/></svg></b>สถิติ</button></nav>
+<script>
+// Day/Night theme: saved choice > system setting
+const TK='sleep_theme';
+function th(m){document.documentElement.dataset.theme=m;const b=document.getElementById('thm');if(b){b.setAttribute('aria-checked',m=='dark');b.firstElementChild.innerHTML=`<svg class="i"><use href="#i-${m=='dark'?'moon':'sun'}"/></svg>`}try{localStorage.setItem(TK,m)}catch(e){}}
+function tg(){
+const nx=document.documentElement.dataset.theme=='dark'?'light':'dark',b=document.getElementById('thm');
+if(!document.startViewTransition||RM){th(nx);return}
+const r=b.getBoundingClientRect(),x=r.left+r.width/2,y=r.top+r.height/2,R=Math.hypot(Math.max(x,innerWidth-x),Math.max(y,innerHeight-y));
+const h=document.documentElement;h.classList.add('vt');
+const t=document.startViewTransition(()=>th(nx));
+t.ready.then(()=>h.animate({clipPath:[`circle(0px at ${x}px ${y}px)`,`circle(${R}px at ${x}px ${y}px)`]},{duration:900,easing:'cubic-bezier(.65,0,.35,1)',pseudoElement:'::view-transition-new(root)'})).catch(()=>{});
+t.finished.catch(()=>{}).then(()=>h.classList.remove('vt'))}
+(()=>{let m=null;try{m=localStorage.getItem(TK)}catch(e){}if(m!='dark'&&m!='light')m=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';th(m)})();
+// Button effects: haptic + ripple (event delegation = 1 listener for every button, even ones created later)
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const hap=ms=>{try{navigator.vibrate&&navigator.vibrate(ms)}catch(e){}};
+document.addEventListener('pointerdown',e=>{
+const b=e.target.closest('.btn,.op,.ci,.ch,.pc');if(!b||b.disabled)return;
+hap(10);
+if(RM||!b.classList.contains('btn'))return;
+const r=b.getBoundingClientRect(),d=Math.max(r.width,r.height)*2,s=document.createElement('span');
+s.className='rp';s.style.cssText=`width:${d}px;height:${d}px;left:${e.clientX-r.left-d/2}px;top:${e.clientY-r.top-d/2}px`;
+b.appendChild(s);setTimeout(()=>s.remove(),650)});
+// Star burst: floating emojis for celebration moments
+function burst(){if(RM)return;const E=['#cdbdf6','#f3c6e2','#ffd9b8','#bfe6d8','#e6def9'];
+for(let i=0;i<14;i++){const s=document.createElement('span');s.className='bt';s.style.background=E[i%5];
+s.style.cssText=`left:${10+Math.random()*80}vw;animation-delay:${Math.random()*.4}s;width:${8+Math.random()*10}px;height:${8+Math.random()*10}px;border-radius:50%;--dx:${(Math.random()-.5)*160}px;--r:${(Math.random()-.5)*90}deg`;
+document.body.appendChild(s);setTimeout(()=>s.remove(),3800)}}
+/* ============================================================
+   CONFIG: เนื้อหาที่ทีมแก้ได้ทั้งหมดอยู่ในบล็อกนี้ (ไม่ต้องแตะโค้ดด้านล่าง)
+   กติกา:
+   - แก้ข้อความ/ตัวเลือกได้ตามสบาย ขณะที่ยังไม่เริ่มเก็บข้อมูลจริง
+   - เริ่มเก็บข้อมูลจริงแล้ว (แผน 1/11) ห้ามแก้ items, scale, ลำดับหมวด
+     ถ้าจำเป็นต้องแก้ ให้เปลี่ยน version เป็น 'v2' และวิเคราะห์แยกเวอร์ชัน
+   - id ของข้อห้ามใช้ซ้ำ ข้อที่ rev:true = กลับคะแนน (6 - คำตอบ)
+   - ระบบฝัง version + รหัสเนื้อหา (hash) ไปกับทุกคำตอบ ถ้าแก้โดยไม่เปลี่ยน version หน้า Dashboard จะเตือน
+   ============================================================ */
+const CONFIG={
+version:'v1',
+thresholds:{high:60,mid:40,highlightItem:4,minReal:30},
+scale:['ไม่เลย','น้อย','ปานกลาง','มาก','มากที่สุด'],
+cats:{
+ w:{
+  n:"สายโหมงานหรืออดนอนสะสม", a:"สายโหมงาน", b:"หรืออดนอนสะสม",
+  g:"อ่านหนังสือ ทำงานเพลิน<br>จนลืมให้ร่างกายพักผ่อน",
+  d:"เวลานอนของคุณถูกแย่งไปด้วยการเรียน งาน การอ่านหนังสือ และกิจกรรมต่าง ๆ จนพักผ่อนไม่เพียงพอ",
+  dim:"ภาระงาน การเรียน และการอดนอนสะสม", c:"#3b9bd1", bg:"#dbf1ff",
+  fix:[
+   "เขียนตารางงานรายสัปดาห์ แล้วกันเวลานอน 7–9 ชม. ไว้ก่อน",
+   "แบ่งงานเป็นชิ้นเล็ก ตั้งเส้นตายของตัวเองให้เร็วกว่าจริง 1 วัน",
+   "ช่วงสอบ ขยับเวลานอนทีละไม่เกิน 30 นาที หลีกเลี่ยงการอดนอนทั้งคืน",
+   "งีบกลางวันไม่เกิน 20–30 นาที และไม่งีบเย็น",
+   "เลี่ยงคาเฟอีนช่วงบ่ายถึงค่ำ",
+   "นอนชดเชยวันหยุดไม่เกิน 1–2 ชม. จากเวลาปกติ"
+  ]},
+ s:{
+  n:"สายติดจอหรือเวลานอนรวน", a:"สายติดจอ", b:"หรือเวลานอนรวน",
+  g:"ขออีกคลิป อีกตอน<br>รู้ตัวอีกทีก็ดึกแล้ว",
+  d:"การเล่นโทรศัพท์ ดูซีรีส์ หรือสื่อบันเทิงก่อนนอน ทำให้เข้านอนช้าและเวลานอน–ตื่นไม่สม่ำเสมอ",
+  dim:"การใช้หน้าจอและเวลานอนที่ไม่สม่ำเสมอ", c:"#6f5fc0", bg:"#eeeaff",
+  fix:[
+   "ตั้งเวลา “ปิดหน้าจอ” 30–60 นาทีก่อนนอน",
+   "ชาร์จโทรศัพท์ให้ห่างเตียง",
+   "เปิดโหมดห้ามรบกวนและลดแสงหน้าจอตอนกลางคืน",
+   "ตั้งเวลานอน–ตื่นให้ใกล้เคียงเดิมทุกวัน (ต่างกันไม่เกิน 1 ชม.)",
+   "แทนที่ด้วยกิจกรรมเบา ๆ เช่น อ่านหนังสือกระดาษ ฟังเพลงเบา ๆ",
+   "ใช้ตัวจับเวลาแอป (App Timer) ช่วงดึก"
+  ]},
+ t:{
+  n:"สายเครียด คิดมาก และความสัมพันธ์", a:"สายเครียด คิดมาก", b:"และความสัมพันธ์",
+  g:"ตัวอยู่บนเตียงแล้ว<br>แต่ความคิดยังไม่ยอมนอน",
+  d:"ความเครียด ความคิดเรื่องเรียน และความไม่สบายใจกับคนรอบตัว ตามมารบกวนคุณตอนกำลังจะนอน",
+  dim:"ความเครียด การคิดมาก และความสัมพันธ์", c:"#d9628f", bg:"#ffe4f0",
+  fix:[
+   "เขียนสิ่งที่ต้องทำ/กังวลลงสมุด 10 นาทีก่อนนอน (Brain Dump)",
+   "หายใจเข้า 4 วินาที ออก 6 วินาที ทำ 5 รอบ",
+   "ผ่อนคลายกล้ามเนื้อทีละส่วน ตั้งแต่เท้าถึงใบหน้า",
+   "ถ้าคิดไม่หยุดเกิน 20 นาที ให้ลุกไปทำกิจกรรมเบา ๆ แล้วค่อยกลับมานอน",
+   "คุยเรื่องไม่สบายใจกับเพื่อนหรือคนใกล้ชิดในช่วงกลางวัน ไม่เก็บไว้คิดบนเตียง",
+   "ถ้าเครียดต่อเนื่อง ลองปรึกษานักจิตวิทยา/ศูนย์ให้คำปรึกษาของมหาวิทยาลัย"
+  ]},
+ e:{
+  n:"สายสภาพแวดล้อมและพฤติกรรมการนอน", a:"สายสภาพแวดล้อม", b:"และพฤติกรรมการนอน",
+  g:"แสง เสียง หรือกิจวัตร<br>อาจทำให้หลับไม่เต็มอิ่ม",
+  d:"แสง เสียง อุณหภูมิ ที่นอน และพฤติกรรมก่อนนอนในที่พัก คือปัจจัยหลักที่กระทบการนอนของคุณ",
+  dim:"สภาพแวดล้อมและพฤติกรรมก่อนนอน", c:"#e0914b", bg:"#ffeede",
+  fix:[
+   "ลดแสง: ใช้ม่านทึบหรือที่ปิดตา",
+   "ลดเสียง: ใช้ที่อุดหูหรือเสียงสม่ำเสมอ (White Noise)",
+   "ทำให้ห้องเย็นสบาย ระบายอากาศดี",
+   "ปรับหมอน/ที่นอนให้รองรับคอและหลังพอดี",
+   "ใช้เตียงสำหรับนอนเท่านั้น (ไม่ทำงาน/ดูซีรีส์บนเตียง)",
+   "ทำกิจวัตรก่อนนอนเดิมทุกคืน เช่น อาบน้ำ–แปรงฟัน–อ่านหนังสือ"
+  ]}
+},
+items:[
+  {id:'w1',cat:'w',text:"การเรียนส่งผลต่อการนอนของคุณมากแค่ไหน?"},
+  {id:'w2',cat:'w',text:"ปริมาณงานที่ได้รับกระทบการนอนมากแค่ไหน?"},
+  {id:'w3',cat:'w',text:"จำนวนคาบเรียนต่อวันทำให้คุณนอนน้อยลงมากแค่ไหน?"},
+  {id:'w4',cat:'w',text:"จำนวนคาบเรียนต่อสัปดาห์กระทบการนอนมากแค่ไหน?"},
+  {id:'w5',cat:'w',text:"ช่วงสอบ คุณลดเวลานอนเพื่ออ่านหนังสือบ่อยแค่ไหน?"},
+  {id:'w6',cat:'w',text:"คุณนอนชดเชยในวันหยุดเพราะนอนไม่พอในวันเรียนบ่อยแค่ไหน?"},
+  {id:'s1',cat:'s',text:"การใช้หน้าจอส่งผลต่อการนอนของคุณมากแค่ไหน?"},
+  {id:'s2',cat:'s',text:"คุณเล่นโทรศัพท์/โซเชียลก่อนนอนมากแค่ไหน?"},
+  {id:'s3',cat:'s',text:"คุณฟังเพลง/ดูซีรีส์ก่อนนอนมากแค่ไหน?"},
+  {id:'s4',cat:'s',text:"คุณใช้โทรศัพท์นานกว่าที่ตั้งใจจนเข้านอนช้าบ่อยแค่ไหน?"},
+  {id:'s5',cat:'s',text:"เวลาเข้านอนและตื่นนอนของคุณไม่สม่ำเสมอแค่ไหน?"},
+  {id:'s6',cat:'s',text:"คุณเลื่อนเวลานอนเพื่อใช้โทรศัพท์หรือทำกิจกรรมส่วนตัวบ่อยแค่ไหน?"},
+  {id:'t1',cat:'t',text:"ความเครียดส่งผลต่อการนอนของคุณมากแค่ไหน?"},
+  {id:'t2',cat:'t',text:"คุณเครียดหรือกังวลเรื่องเรียนก่อนนอนมากแค่ไหน?"},
+  {id:'t3',cat:'t',text:"คุณคิดถึงงานหรือสิ่งที่ต้องทำวันถัดไปตอนจะนอนบ่อยแค่ไหน?"},
+  {id:'t4',cat:'t',text:"ความไม่สบายใจเรื่องความสัมพันธ์ (เพื่อน/คนใกล้ชิด) รบกวนการนอนมากแค่ไหน?"},
+  {id:'t5',cat:'t',text:"คุณสังเกตว่าคุณภาพการนอนของตนเองลดลงมากแค่ไหน?"},
+  {id:'t6',cat:'t',text:"คุณรับมือกับความเครียดก่อนนอนได้ดีแค่ไหน? (5 = ทำได้ดีมาก)",rev:true},
+  {id:'e1',cat:'e',text:"สภาพแวดล้อมและชีวิตประจำวันส่งผลต่อการนอนของคุณมากแค่ไหน?"},
+  {id:'e2',cat:'e',text:"แสงสว่างในห้องรบกวนการนอนของคุณมากแค่ไหน?"},
+  {id:'e3',cat:'e',text:"เสียงรบกวนจากภายนอกรบกวนการนอนของคุณมากแค่ไหน?"},
+  {id:'e4',cat:'e',text:"อุณหภูมิในห้อง (ร้อน/เย็นเกินไป) ส่งผลต่อการนอนมากแค่ไหน?"},
+  {id:'e5',cat:'e',text:"สภาพอากาศ (ฝน ลม พายุ) ส่งผลต่อการนอนมากแค่ไหน?"},
+  {id:'e6',cat:'e',text:"ที่นอน/หมอน/พื้นที่นอนไม่สบายจนกระทบการนอนมากแค่ไหน?"}
+],
+faculties:['คณะแพทยศาสตร์ศิริราชพยาบาล','คณะแพทยศาสตร์โรงพยาบาลรามาธิบดี','คณะทันตแพทยศาสตร์','คณะเภสัชศาสตร์','คณะเทคนิคการแพทย์','คณะพยาบาลศาสตร์','คณะสาธารณสุขศาสตร์','คณะกายภาพบำบัด','คณะสัตวแพทยศาสตร์','คณะวิทยาศาสตร์','คณะวิศวกรรมศาสตร์','คณะเทคโนโลยีสารสนเทศและการสื่อสาร','คณะสิ่งแวดล้อมและทรัพยากรศาสตร์','คณะเวชศาสตร์เขตร้อน','คณะศิลปศาสตร์','คณะสังคมศาสตร์และมนุษยศาสตร์','คณะวิทยาการเรียนรู้และศึกษาศาสตร์','วิทยาลัยนานาชาติ','วิทยาลัยการจัดการ','วิทยาลัยดุริยางคศิลป์','วิทยาลัยราชสุดา','วิทยาลัยศาสนศึกษา','วิทยาลัยวิทยาศาสตร์และเทคโนโลยีการกีฬา','วิทยาเขตกาญจนบุรี','วิทยาเขตนครสวรรค์','วิทยาเขตอำนาจเจริญ','สถาบันอื่น ๆ (ไม่ใช่มหาวิทยาลัยมหิดล)'],
+form:{
+g:[{k:'consent',t:'check',q:'ฉันยินยอมให้ใช้ข้อมูลที่ตอบในโครงงานนี้'},
+{k:'who',q:'คุณเป็น',o:['นักศึกษา','คนทั่วไป']},
+{t:'reveal',on:'who',val:'นักศึกษา',f:[
+{k:'year',q:'ชั้นปี',o:['ชั้นปีที่ 1','ชั้นปีที่ 2','ชั้นปีที่ 3','ชั้นปีที่ 4','ชั้นปีที่ 5 ขึ้นไป']},
+{k:'fac',q:'คณะ / ส่วนงาน',t:'select',o:'@faculties'}]},
+{t:'reveal',on:'who',val:'คนทั่วไป',f:[
+{k:'age',q:'ช่วงอายุ',o:['ต่ำกว่า 18 ปี','18–24 ปี','25–34 ปี','35–44 ปี','45–59 ปี','60 ปีขึ้นไป']}]},
+{k:'sex',q:'เพศ',o:['หญิง','ชาย','อื่น ๆ','ไม่ประสงค์ระบุ']},
+{k:'home',q:'ลักษณะที่พักอาศัยในปัจจุบัน',t:'cards',o:[
+{v:'หอพักมหาวิทยาลัย',i:'<svg class="i"><use href="#i-school"/></svg>',d:'อยู่ในรั้วมหาวิทยาลัย'},
+{v:'หอพักภายนอกมหาวิทยาลัย',i:'<svg class="i"><use href="#i-build"/></svg>',d:'หอ / อพาร์ตเมนต์ข้างนอก'},
+{v:'บ้าน / พักกับครอบครัว',i:'<svg class="i"><use href="#i-home"/></svg>',d:'อยู่กับครอบครัวหรือญาติ'},
+{v:'อื่น ๆ',i:'<svg class="i"><use href="#i-more"/></svg>',d:'เช่น คอนโด พักกับเพื่อน'}]}],
+b:[{k:'hrs',q:'ระยะเวลานอนหลับเฉลี่ยต่อวัน (ชั่วโมง)',t:'number',ph:'เช่น 6.5'},
+{q:'เวลาเข้านอนและเวลาตื่นนอนปกติ',t:'times'},
+{k:'pre',q:'กิจกรรมที่ทำก่อนเข้านอนใน 1 ชั่วโมง (เลือกได้หลายข้อ)',m:1,o:['เล่นโทรศัพท์ / โซเชียลมีเดีย','ดู YouTube / ซีรีส์ / สื่อบันเทิง','อ่านหนังสือ / ทำรายงาน','เล่นเกม','รับประทานอาหาร / ขนม','ดื่มเครื่องดื่มที่มีคาเฟอีน','ออกกำลังกาย','พูดคุยกับเพื่อน / ครอบครัว','อื่น ๆ']},
+{k:'sleepy',q:'ช่วงที่รู้สึกง่วงหรือขาดสมาธิมากที่สุดในระหว่างวัน (เลือกได้หลายข้อ)',m:1,o:['เช้า','บ่าย','เย็น','ขณะเรียน','ขณะทำกิจกรรม','ไม่ค่อยรู้สึกง่วง']},
+{k:'exam',q:'ในช่วงสอบ คุณมักเปลี่ยนเวลานอนหรือไม่',o:['ไม่เปลี่ยน','เปลี่ยนเล็กน้อย','เปลี่ยนมาก','นอนดึกเป็นประจำในช่วงสอบ']}],
+i:[{k:'prob',q:'ปัญหาที่พบเกี่ยวกับการนอนหลับที่กำลังเผชิญ (เลือกได้หลายข้อ)',m:1,o:['ง่วงหรืออ่อนเพลียระหว่างวัน','สมาธิในการเรียนหรือทำงานลดลง','การจดจำหรือการเรียนรู้ลดลง','ส่งผลต่ออารมณ์ระหว่างวัน','คุณภาพชีวิตประจำวันลดลง','อื่น ๆ']},
+{k:'cope',q:'ปัจจุบันคุณมีวิธีรับมือหรือแก้ปัญหาการนอนหลับอย่างไร',t:'area',ph:'พิมพ์ได้เลย (ไม่บังคับ)'},
+{k:'want',q:'คุณต้องการคำแนะนำเรื่องใดมากที่สุด',o:['การจัดเวลาเรียนและเวลานอน','การลดการใช้โทรศัพท์ก่อนนอน','การจัดการความเครียด','การปรับสภาพแวดล้อมในการนอน','การสร้างพฤติกรรมการนอนที่เหมาะสม','ยังไม่ทราบ','อื่น ๆ']}]}
+};
+// ---- ค่าที่ระบบสร้างต่อจาก CONFIG (ไม่ต้องแก้) ----
+const K=Object.keys(CONFIG.cats),LB=CONFIG.scale,HI=CONFIG.thresholds.high;
+const D={},T={};K.forEach(k=>{const c=CONFIG.cats[k];D[k]=c.dim;T[k]={n:c.n,a:c.a,b:c.b,g:c.g,d:c.d,fix:c.fix,c:c.c,bg:c.bg}});
+const Q=CONFIG.items.map(x=>[x.cat,x.text]);
+const REVS=new Set(CONFIG.items.flatMap((x,i)=>x.rev?[i]:[]));
+const FAC=CONFIG.faculties;
+const rsv=f=>({...f,o:f.o==='@faculties'?FAC:f.o,f:f.f&&f.f.map(rsv)});
+const FORM=Object.fromEntries(Object.entries(CONFIG.form).map(([k,v])=>[k,v.map(rsv)]));
+const hash=x=>{let h=5381;for(let i=0;i<x.length;i++)h=(h*33^x.charCodeAt(i))>>>0;return h.toString(36)};
+const SHASH=hash(JSON.stringify([CONFIG.scale,CONFIG.items.map(x=>[x.id,x.cat,x.text,!!x.rev])]));
+const ICN={w:'coffee',s:'phone',t:'heart',e:'bed'};K.forEach(k=>T[k].e=`<svg class="i"><use href="#i-${ICN[k]}"/></svg>`);
+// ช่องใส่รูป: ว่าง = แสดงกรอบประ  |  ใส่ได้ด้วย embed_images.py
+/*IMG_START*/const IMG={hero:'',banner:'',w:'',s:'',t:'',e:''};/*IMG_END*/
+const SL={hero:'รูปหลักหน้าแรก',banner:'แบนเนอร์',w:'Mascot สายโหมงาน',s:'Mascot สายติดจอ',t:'Mascot สายเครียด',e:'Mascot สายสภาพแวดล้อม'};
+const slot=k=>IMG[k]?`<img class="sl" src="${IMG[k]}" alt="">`:`<div class="slot"><b>ใส่รูป: ${k}</b><small>${SL[k]}</small></div>`;
+const svg=slot;
+$=s=>document.querySelector(s);
+if(IMG.hero)$('#hero-art').innerHTML=`<img class="dimg" src="${IMG.hero}" alt="">`;
+$('#types').innerHTML=K.map((k,i)=>`<div class="tc" style="background:${T[k].bg}"><div class="tn" style="color:${T[k].c}">0${i+1}</div><div class="ic">${T[k].e}</div><h3>${T[k].a}</h3><b>${T[k].b}</b><p>${T[k].g}</p><small style="color:${T[k].c}">${T[k].e} ฟังสิ่งที่ร่างกายกำลังบอก</small></div>`).join('');
+// Scoring engine (rule-based)
+const adj=(a,i)=>REVS.has(i)?6-a[i]:a[i];
+function score(a){const s={};K.forEach(k=>s[k]=[]);Q.forEach((q,i)=>s[q[0]].push(adj(a,i)));const p={};K.forEach(k=>p[k]=Math.round((s[k].reduce((x,y)=>x+y,0)/s[k].length-1)*25));const r=[...K].sort((x,y)=>p[y]-p[x]);return{p,type:r[0],second:r[1]}}
+// Database (browser storage; seeded with simulated demo rows)
+const KEY='sleepdb_v1';
+const ld=()=>{try{return JSON.parse(localStorage.getItem(KEY))}catch(e){return null}};
+const sv=x=>{try{localStorage.setItem(KEY,JSON.stringify(x))}catch(e){}};
+function seed(){let s=7;const r=()=>(s=s*16807%2147483647)/2147483647;const o=[];
+for(let i=0;i<100;i++){const f=K[Math.floor(r()*4)];const a=Q.map(q=>Math.max(1,Math.min(5,Math.round((q[0]==f?3.8:2.4)+(r()-.5)*2.4))));
+o.push({id:i+1,demo:1,ts:new Date(Date.now()-r()*12*864e5).toISOString().slice(0,10),a,...score(a)})}sv(o);return o}
+let db=ld();if(!db||!db.length)db=seed();
+let tk='s',cur,pn=0,st=0,ex={},ans=[],pv=0,tm={},ORD=[...Q.keys()];
+const go=id=>{const c=document.querySelector('section.on'),sw=()=>{document.querySelectorAll('section').forEach(x=>x.classList.toggle('on',x.id==id));scrollTo(0,0);
+const M={'v-home':0,'v-quiz':1,'v-proc':1,'v-res':1,'v-types':2,'v-tips':3,'v-dash':4};['.tabbar button','.topnav button'].forEach(sl=>document.querySelectorAll(sl).forEach((b,i)=>{b.classList.toggle('on',i==M[id]);if(i==M[id])b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')}))};
+if(!c||c.id==id||RM){sw();return}
+c.classList.add('out');setTimeout(()=>{c.classList.remove('out');sw()},320)};
+function tabQ(){if(!document.getElementById('v-quiz').classList.contains('on'))start()}
+// ลำดับที่แสดง (ORD) แยกจากลำดับจริงของข้อ (Q) -> คะแนน/ฐานข้อมูลยังใช้เลขข้อเดิม
+const shuf=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function mkOrd(){const by=K.map(k=>shuf(Q.map((q,i)=>q[0]==k?i:-1).filter(i=>i>=0))),o=[],mx=Math.max(...by.map(b=>b.length));
+for(let r=0;r<mx;r++)shuf(K.map((_,i)=>i)).forEach(c=>{if(by[c][r]!==undefined)o.push(by[c][r])});return o}
+function start(){st=0;pn=0;ex={};ans=[];pv=0;ORD=mkOrd();rq(1);go('v-quiz')}
+const bn=()=>`<div class="banner">${slot('banner')}<div><small>พื้นที่เล็ก ๆ เพื่อการนอนที่ดี</small><b>ค่อย ๆ ฟังสิ่งที่ร่างกายกำลังบอก</b></div></div>`;
+
+// ===== แบบสอบถามแบบวงกลม: 1 หน้า = 1 หมวด (6 ข้อ) =====
+const PS=6,SZ=[52,42,34,42,52];
+// ===== ลำดับหน้า: ข้อมูลทั่วไป → พฤติกรรม → วงกลม 4 หน้า → ผลกระทบ =====
+const STEPS=[{t:'g'},{t:'b'},...Array.from({length:Math.ceil(Q.length/PS)},(_,p)=>({t:'s',p})),{t:'i'}];
+const FT={g:'ข้อมูลทั่วไป',b:'พฤติกรรมการนอนของคุณ',i:'ผลกระทบและความคิดเห็น'};
+const prog=()=>{const S=STEPS[st];let f=0;if(S.t=='s'){const g=pgItems();f=g.filter(i=>ans[i]).length/g.length}return(st+f)/STEPS.length*100};
+const esc=x=>String(x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+// ข้อมูลเสริม (เดโม: เก็บไว้ในตัวแปร ex ชั่วคราวเพื่อให้ย้อนกลับมาแล้วยังเห็นคำตอบ ไม่บันทึกลงที่ไหน)
+function pick(k,el,m){const v=el.dataset.v;
+if(m){const a=ex[k]=ex[k]||[],i=a.indexOf(v);i<0?a.push(v):a.splice(i,1);el.classList.toggle('on')}
+else{ex[k]=v;el.parentElement.querySelectorAll('[data-v]').forEach(c=>c.classList.toggle('on',c==el))}
+// ตัวเลือกที่ทำให้มีคำถามต่อ (เช่น นักศึกษา -> ช่วงอายุ/คณะ)
+document.querySelectorAll('.rv[data-rk="'+k+'"]').forEach(r=>{const on=v==r.dataset.val;r.classList.toggle('on',on);r.inert=!on;
+if(!on){r.querySelectorAll('.op.on').forEach(c=>c.classList.remove('on'));r.querySelectorAll('select').forEach(x=>x.value='');r.dataset.keys.split(',').forEach(x=>delete ex[x])}})}
+function fieldHTML(f,j){const v=ex[f.k];
+if(f.t=='check')return `<div class="qi" style="--d:${j*.07}s"><label class="cb"><input type="checkbox" ${v?'checked':''} onchange="ex.${f.k}=this.checked"><span class="bx"></span><span>${f.q}</span></label></div>`;
+if(f.t=='reveal'){const on=ex[f.on]==f.val;return `<div class="rv ${on?'on':''}" data-rk="${f.on}" data-val="${f.val}" data-keys="${f.f.map(x=>x.k).join(',')}" ${on?'':'inert'}><div>${f.f.map((x,i)=>fieldHTML(x,i)).join('')}</div></div>`}
+let h;
+if(f.t=='cards')h=`<div class="pcs">${f.o.map(c=>`<button type="button" class="pc ${v==c.v?'on':''}" data-v="${esc(c.v)}" onclick="pick('${f.k}',this,0)"><span class="pi">${c.i}</span><b>${c.v}</b><small>${c.d}</small></button>`).join('')}</div>`;
+else if(f.t=='select')h=`<select class="inp" onchange="ex.${f.k}=this.value"><option value="">เลือก…</option>${f.o.map(o=>`<option ${v==o?'selected':''}>${o}</option>`).join('')}</select>`;
+else if(f.o&&f.m)h=`<div class="chs">${f.o.map(o=>`<button type="button" class="ch ${(v||[]).includes(o)?'on':''}" data-v="${esc(o)}" onclick="pick('${f.k}',this,1)">${o}</button>`).join('')}</div>`;
+else if(f.o)h=`<div class="opl">${f.o.map(o=>`<button type="button" class="op ${v==o?'on':''}" data-v="${esc(o)}" onclick="pick('${f.k}',this,0)"><i></i>${o}</button>`).join('')}</div>`;
+else if(f.t=='times')h=`<div class="row2"><label class="mu">เข้านอน<input class="inp" type="time" value="${esc(ex.bed||'')}" oninput="ex.bed=this.value"></label><label class="mu">ตื่นนอน<input class="inp" type="time" value="${esc(ex.wake||'')}" oninput="ex.wake=this.value"></label></div>`;
+else if(f.t=='area')h=`<textarea class="inp" placeholder="${f.ph}" oninput="ex.${f.k}=this.value">${esc(v||'')}</textarea>`;
+else h=`<input class="inp" type="${f.t}" ${f.t=='number'?'min="0" max="24" step="0.5" inputmode="decimal"':''} placeholder="${f.ph||''}" value="${esc(v||'')}" oninput="ex.${f.k}=this.value">`;
+return `<div class="qi" style="--d:${j*.07}s"><h3 class="qq">${f.q}</h3>${h}</div>`}
+const formHTML=t=>FORM[t].map((f,j)=>fieldHTML(f,j)).join('');
+const pgItems=()=>ORD.slice(pn*PS,pn*PS+PS);
+const pageDone=()=>STEPS[st].t!='s'||pgItems().every(i=>ans[i]);
+function scaleHTML(){return pgItems().map((i,j)=>{const v=ans[i],rev=REVS.has(i);
+const cl=SZ.map((z,x)=>{const c=x<2?(rev?'hi':'lo'):x>2?(rev?'lo':'hi'):'md';return `<button class="ci ${c} ${v==x+1?'on':''}" style="--s:${z}px" onclick="sel(${i},${x+1})" aria-label="${LB[x]}"></button>`}).join('');
+return `<div class="qi ${v?'done':''}" id="q${i}" style="--d:${j*.07}s"><h3 class="qq">${Q[i][1]}</h3><div class="sc">${cl}</div><div class="sl2"><span class="${rev?'hi':'lo'}">${LB[0]}</span><span class="${rev?'lo':'hi'}">${LB[4]}</span></div></div>`}).join('')}
+function rq(a){const S=STEPS[st],sc=S.t=='s';if(sc)pn=S.p;
+const n=ans.filter(x=>x).length,w=prog(),f=pv;pv=w;
+$('#v-quiz').innerHTML=bn()+`<div class="qw ${a?'in':''}"><div class="qh"><h2>${sc?'แบบทดสอบพฤติกรรมการนอน':FT[S.t]}</h2></div>
+<p class="mu" id="intro">${sc?'นึกถึง 2 สัปดาห์ที่ผ่านมา แล้วแตะวงกลมที่ตรงกับคุณที่สุด ไม่มีคำตอบถูกหรือผิด':'ตอบหรือข้ามก็ได้ · <b>เดโม: ข้อมูลหน้านี้ยังไม่ถูกบันทึก</b>'}</p>
+<div class="stk"><div class="stk-r"><span class="cat" style="background:#efe9fc;color:#2a2550">หน้า ${st+1} จาก ${STEPS.length}</span><span class="ac" id="cnt">${sc?`${n} / ${Q.length} ข้อ`:'ไม่บังคับ'}</span></div>
+<div class="bar" style="height:10px"><i class="pg" style="--f:${f}%;width:${w}%"></i></div></div>
+${sc?scaleHTML():formHTML(S.t)}
+<div class="g2"><button class="btn s" onclick="back()">ย้อนกลับ</button><button class="btn" id="nxb" ${pageDone()?'':'disabled'} onclick="nx()">${st==STEPS.length-1?'ดูผลลัพธ์':'ต่อไป'}</button></div>
+<p class="mu c">เครื่องมือสำรวจพฤติกรรมเบื้องต้น ไม่ใช่การวินิจฉัยทางการแพทย์</p></div>`}
+// เปลี่ยนหน้า (หมวด): เลื่อนให้เห็นแถบ progress ด้านบน
+function qs(){
+const run=()=>{const el=document.querySelector('#v-quiz #intro');if(!el)return;
+const y=Math.max(0,el.getBoundingClientRect().top+scrollY-14),y0=scrollY;
+if(Math.abs(y-y0)<4)return;
+scrollTo({top:y,behavior:RM?'auto':'smooth'});
+setTimeout(()=>{if(Math.abs(scrollY-y0)<2)scrollTo(0,y)},220)};
+requestAnimationFrame(()=>requestAnimationFrame(run))}
+function back(){if(st>0){st--;rq(1);qs()}else go('v-home')}
+function nx(){if(!pageDone())return;if(st<STEPS.length-1){st++;rq(1);qs()}else fin()}
+// ตอบข้อ i: เติมวงกลม → (0.38 วิ) ข้อนั้นเปลี่ยนเป็นขาวดำ → เลื่อนไปข้อถัดไปที่ยังไม่ตอบ
+function sel(i,v){ans[i]=v;const q=document.getElementById('q'+i);
+q.classList.remove('done');
+q.querySelectorAll('.ci').forEach((c,x)=>c.classList.toggle('on',x==v-1));
+const n=ans.filter(x=>x).length,pr=prog(),bar=document.querySelector('#v-quiz .bar i');
+document.getElementById('cnt').textContent=`${n} / ${Q.length} ข้อ`;
+bar.classList.remove('pg');bar.style.width=pr+'%';pv=pr;
+document.getElementById('nxb').disabled=!pageDone();
+clearTimeout(tm[i]);
+tm[i]=setTimeout(()=>{if(document.getElementById('q'+i)!==q)return;q.classList.add('done');advance(i)},RM?0:380)}
+function advance(i){let t=-1;
+for(let j=ORD.indexOf(i)+1;j<Math.min((pn+1)*PS,ORD.length);j++)if(!ans[ORD[j]]){t=ORD[j];break}
+let el,fr;
+if(t>=0){el=document.getElementById('q'+t);fr=.28}
+else if(pageDone()){el=document.getElementById('nxb');fr=.55}
+else return;
+const y=Math.max(0,el.getBoundingClientRect().top+scrollY-innerHeight*fr),y0=scrollY;
+if(Math.abs(y-y0)<8)return;
+scrollTo({top:y,behavior:RM?'auto':'smooth'});
+setTimeout(()=>{if(Math.abs(scrollY-y0)<2)scrollTo(0,y)},260)}
+function fin(){go('v-proc');setTimeout(()=>{cur={id:db.length+1,demo:0,ts:new Date().toISOString().slice(0,10),v:CONFIG.version,h:SHASH,ord:ORD.slice(),a:ans.slice(),...score(ans)};db.push(cur);sv(db);res()},2600)}
+const lv=p=>p>=HI?'ส่งผลมาก':p>=CONFIG.thresholds.mid?'ส่งผลปานกลาง':'ส่งผลน้อย';
+function res(){const r=cur,t=T[r.type],s2=T[r.second];
+const hi=Q.map((q,i)=>[i,q[0]==r.type?adj(r.a,i):0]).filter(x=>x[1]>=CONFIG.thresholds.highlightItem).sort((x,y)=>y[1]-x[1]).slice(0,3);
+$('#v-res').innerHTML=bn()+`<div class="qw"><div class="c"><span class="ac">ผลสำรวจการนอนของคุณ</span><h1 class="h2">มารู้จักสไตล์การนอนของคุณ</h1><p class="mu">ด้านที่ได้คะแนนสูงสุดสะท้อนพฤติกรรมที่คุณรายงานบ่อยที่สุด ไม่ใช่ระดับความรุนแรงหรือการวินิจฉัย</p></div>
+<h3>คะแนนของคุณในแต่ละด้าน</h3>${K.map(k=>`<div class="m2"><div><span>${D[k]}</span><b>${r.p[k]} / 100</b></div><div class="bar"><i style="width:${r.p[k]}%"></i></div></div>`).join('')}
+<div class="hl" style="background:${t.bg}"><small style="color:${t.c}">คะแนนสูงสุด ${r.p[r.type]} / 100 · ${lv(r.p[r.type])}</small><h2>${t.n}</h2>${slot(r.type)}</div>
+<p>${t.d}</p>
+<h3>จุดเด่นของคุณ</h3><ul class="tk">${hi.length?hi.map(x=>`<li>${Q[x[0]][1].replace(/\(5.*\)/,'')} (${x[1]}/5)</li>`).join(''):'<li>คะแนนทุกด้านไม่สูงมาก ถือว่าพฤติกรรมการนอนค่อนข้างดี</li>'}</ul>
+<h3>ลองเริ่มจากสิ่งเล็ก ๆ เหล่านี้</h3><ul class="tk">${t.fix.slice(0,4).map(x=>`<li>${x}</li>`).join('')}</ul>
+<p class="mu">ด้านรองลงมา: ${s2.e} ${s2.n} (${r.p[r.second]}/100)</p><hr style="border:0;border-top:1px solid var(--ln)">
+<p class="mu">หากนอนหลับยาก ง่วงมาก หรือการนอนรบกวนการเรียนและชีวิตประจำวันอย่างต่อเนื่อง ควรปรึกษาบุคลากรสุขภาพหรือหน่วยดูแลนักศึกษาของมหาวิทยาลัย</p>
+<div class="g2"><button class="btn" onclick="start()">↻ ทำแบบทดสอบอีกครั้ง</button><button class="btn s" onclick="go('v-home')">⌂ กลับหน้าแรก</button></div>
+<button class="btn s" onclick="tips()">Checklist และคำแนะนำ</button><button class="btn s" onclick="share()">แชร์ผลของฉัน</button><button class="btn s" onclick="dash()">Dashboard ภาพรวม</button></div>`;go('v-res');burst()}
+const SH={w:'โหมงาน',s:'ติดจอ',t:'คิดมาก',e:'ห้องนอน'};
+async function share(){const x=`ฉันคือ “${T[cur.type].n}” จาก Long Life Sleep & Well-being`;try{if(navigator.share){await navigator.share({text:x});return}}catch(e){}try{await navigator.clipboard.writeText(x);alert('คัดลอกข้อความแล้ว')}catch(e){prompt('คัดลอกข้อความนี้',x)}}
+const ck={};
+function tips(k){const r=k?{type:k}:(cur||(cur={type:'s'})),t=T[r.type];tk=r.type;
+$('#v-tips').innerHTML=`<div class="card" style="background:${t.c}22"><div style="display:flex;align-items:center;gap:10px"><div style="width:90px">${svg(r.type)}</div><div><b>Sleep Hygiene Checklist</b><div class="mu">${t.n}</div><div id="pg" class="mu"></div></div></div></div>
+<div class="card">${t.fix.map((x,i)=>`<label class="ck"><input type="checkbox" onchange="ck[${i}]=this.checked;pg()"><span>${x}</span></label>`).join('')}</div>
+<div class="card"><h3>7-Day Sleep Tracker</h3><p class="mu">ดาวน์โหลดตารางบันทึกการนอน 7 วันเพื่อใช้จริง</p><button class="btn" onclick="trk()">ดาวน์โหลด Tracker (CSV)</button><textarea id="csv2"></textarea></div>
+<button class="btn s" onclick="dash()">ไปที่ Dashboard</button>`;
+Object.keys(ck).forEach(k=>delete ck[k]);pg();go('v-tips')}
+function pg(){const n=T[tk].fix.length,c=Object.values(ck).filter(Boolean).length;$('#pg').textContent=`ทำแล้ว ${c}/${n} ข้อ`+(c==n?' · ครบแล้ว':'');if(c==n)burst()}
+async function dl(name,data,box){try{const d=window.claude&&await window.claude.use('downloads');if(d){await d.save({filename:name,data});return}}catch(e){}box.style.display='block';box.value=data}
+const trk=()=>dl('7day_sleep_tracker.csv','\ufeffDay,Bedtime,Wake time,Sleep hours,Screen before bed (min),Stress (1-5),Notes\n'+[1,2,3,4,5,6,7].map(d=>d+',,,,,,').join('\n'),$('#csv2'));
+// ===== หน้าประเภท: 4 สไตล์ แต่ละสไตล์เป็นแถบสี + มาสคอต + คำอธิบาย =====
+const band=(k,i)=>`<article class="tyb${i%2?' r':''}" style="--bk:${T[k].bg};--ck:${T[k].c}" aria-labelledby="ty-${k}"><div class="tyi">${slot(k)}</div>
+<div class="tyt"><span class="tyn">0${i+1}</span><h3 id="ty-${k}">${T[k].a}<small>${T[k].b}</small></h3><p>${T[k].d}</p>
+<ul class="tyf">${T[k].fix.slice(0,2).map(x=>`<li>${x}</li>`).join('')}</ul>
+<button class="btn s" onclick="tips('${k}')" aria-label="ดูวิธีปรับของ ${T[k].a} ${T[k].b}">ดูวิธีปรับทั้งหมด</button></div></article>`;
+function showTypes(){
+$('#v-types').innerHTML=bn()+`<div class="qw"><div class="tyh"><h2>4 สไตล์การนอน</h2><p class="mu">ไม่มีสไตล์ไหนถูกหรือผิด เป็นเพียงภาพรวมว่าอะไรกระทบการนอนของคุณมากที่สุดในตอนนี้</p><button class="btn" onclick="start()">ทำแบบทดสอบ</button></div>
+${K.map(band).join('')}
+<div class="tyh tyz"><p class="mu">อยากรู้ว่าคุณใกล้เคียงสไตล์ไหน</p><button class="btn" onclick="start()">เริ่มทำแบบทดสอบ</button></div></div>`;
+go('v-types')}
+function dash(m){const R=db.filter(x=>!x.demo),Dm=db.filter(x=>x.demo);dmode=m||(R.length?'real':'demo');
+const d=dmode=='real'?R:dmode=='demo'?Dm:db,n=d.length,MIN=CONFIG.thresholds.minReal;
+const seg=[['real','ข้อมูลจริง',R.length],['demo','ข้อมูลจำลอง',Dm.length],['all','รวมทั้งสอง',db.length]].map(([k,t,c])=>`<button aria-pressed="${dmode==k}" onclick="dash('${k}')">${t} (${c})</button>`).join('');
+let stt=dmode=='real'?(n?`<b>ข้อมูลจริง ${n} คน</b>${n<MIN?` — ยังน้อยกว่า ${MIN} คน ตัวเลขจะเปลี่ยนมากเมื่อมีผู้ตอบเพิ่ม ยังไม่ควรใช้สรุปผล`:''}`:'<b>ยังไม่มีข้อมูลจริงในเครื่องนี้</b>'):dmode=='demo'?`<b>ข้อมูลจำลอง ${n} คน</b> — สร้างด้วยโค้ดเพื่อสาธิตหน้านี้ ไม่ใช่ผลสำรวจ ห้ามนำไปอ้างอิงเป็นผลโครงงาน`:`<b>รวมข้อมูลจริง ${R.length} คน กับข้อมูลจำลอง ${Dm.length} คน</b> — ตัวเลขชุดนี้ไม่ใช่ผลสำรวจ ใช้ดูหน้าตาเท่านั้น`;
+const vs=[...new Set(d.filter(x=>!x.demo).map(x=>(x.v||'ไม่ระบุ')+'/'+(x.h||'-')))];if(vs.length>1&&dmode!='demo')stt+=` <br><b>เตือน:</b> ข้อมูลจริงมาจากแบบสอบถามหลายเวอร์ชัน (${vs.join(', ')}) ไม่ควรรวมวิเคราะห์`;const pc=(x,t)=>Math.round(x/t*100);let body;
+if(!n)body=`<div class="dhx"><h3>ยังไม่มีข้อมูลจริง</h3><p class="mu">เมื่อมีคนทำแบบทดสอบในเครื่องนี้ ผลจะมาแสดงที่นี่ หรือเลือกดูข้อมูลจำลองเพื่อดูหน้าตาของหน้านี้</p></div>`;
+else{const cnt={w:0,s:0,t:0,e:0},m={w:0,s:0,t:0,e:0},hi={w:0,s:0,t:0,e:0};
+d.forEach(x=>{cnt[x.type]++;K.forEach(k=>{m[k]+=x.p[k]/n;if(x.p[k]>=HI)hi[k]++})});
+const rk=[...K].sort((a,b)=>cnt[b]-cnt[a]),t1=rk[0],t2=rk[1],gap=cnt[t1]-cnt[t2],avg=K.reduce((q,k)=>q+m[k],0)/4,mx=Math.max(...K.map(k=>cnt[k]));
+const nm=k=>`<i style="background:var(--c${k})"></i>`;
+body=`<div class="dhk"><div class="dhn">${pc(cnt[t1],n)}<small>%</small></div><p class="dhl">ของผู้ตอบอยู่ในกลุ่ม <b>${T[t1].n}</b><span>${cnt[t1]} จาก ${n} คน · ${gap?`มากกว่าอันดับ 2 (${T[t2].n}) อยู่ ${gap} คน`:`เท่ากับอันดับ 2 (${T[t2].n})`}</span></p></div>
+<dl class="dhm"><div><dt>ผู้ตอบ</dt><dd>${n}<small>คน</small></dd></div><div><dt>คะแนนเฉลี่ยรวม</dt><dd>${avg.toFixed(1)}<small>จาก 100 · เฉลี่ยของ 4 ด้าน</small></dd></div></dl>
+<div class="dhx"><h3>จำนวนผู้ตอบในแต่ละกลุ่ม</h3><ol class="dhr" aria-label="จัดอันดับตามจำนวนผู้ตอบ">${rk.map(k=>`<li><span class="dnm">${nm(k)}${T[k].n}</span><div class="dht" aria-hidden="true"><b style="width:${cnt[k]/mx*100}%;background:var(--c${k})"></b></div><span class="dhv"><b>${cnt[k]}</b> <small>คน</small> · <b>${pc(cnt[k],n)}%</b></span></li>`).join('')}</ol><p class="dhg">ความยาวแถบเทียบกับกลุ่มที่มากที่สุด · แต่ละคนถูกจัดเข้า 1 กลุ่ม</p></div>
+<div class="dhx"><h3>คะแนนเฉลี่ยรายด้าน</h3><ul class="dhr sc" aria-label="คะแนนเฉลี่ยและสัดส่วนผู้ที่คะแนนถึงเกณฑ์">${K.map(k=>`<li><span class="dnm">${nm(k)}${D[k]}</span><div class="dht" aria-hidden="true"><b style="width:${m[k]}%;background:var(--c${k})"></b><u style="left:${HI}%"></u></div><span class="dhv"><small>เฉลี่ย</small><b>${m[k].toFixed(1)}</b></span><span class="dhv"><small>≥ ${HI}</small><b>${pc(hi[k],n)}%</b></span></li>`).join('')}</ul><p class="dhg">แถบเต็มความยาว = 100 คะแนน · เส้นประ = ${HI} คะแนน (เกณฑ์ที่ทีมกำหนดเอง) · “≥ ${HI}” คือสัดส่วนผู้ตอบที่ได้คะแนนด้านนั้นตั้งแต่ ${HI} ขึ้นไป</p></div>`}
+$('#v-dash').innerHTML=`<div class="dhh"><h2>ภาพรวมผลการประเมิน</h2><div class="dhs" role="group" aria-label="เลือกชุดข้อมูล">${seg}</div></div><p class="dhst${dmode=='real'?'':' demo'}" role="status">${stt}</p>${body}
+<div class="dhx"><div class="dha"><button class="btn" onclick="exp()">ส่งออก CSV</button><button class="btn s" onclick="db=seed();dash()">รีเซ็ตเป็นข้อมูลจำลอง 100 คน</button><button class="btn s" onclick="go('v-home')">กลับหน้าแรก</button></div><textarea id="csv"></textarea></div>
+<p class="dhnote">แบบสอบถามเวอร์ชัน ${CONFIG.version} (รหัสเนื้อหา ${SHASH}) · วิธีอ่านตัวเลข: คะแนนแต่ละด้านมาจากคำตอบ 6 ข้อ แปลงเป็นช่วง 0–100 <b>คะแนนสูง = ปัจจัยด้านนั้นส่งผลต่อการนอนมาก</b> ไม่ได้แปลว่าดีหรือไม่ดี (ข้อ “รับมือความเครียดได้” กลับด้านคะแนนก่อนคำนวณ) · กลุ่มของแต่ละคนคือด้านที่คะแนนสูงสุด ถ้าเท่ากันเลือกตามลำดับ ภาระงาน → หน้าจอ → ความเครียด → สภาพแวดล้อม · เปอร์เซ็นต์ปัดเศษเป็นจำนวนเต็ม จึงอาจรวมไม่ถึง 100 · เป็นการสำรวจตัวเอง ไม่ใช่การวินิจฉัย</p>`;
+if(!$('#v-dash').classList.contains('on'))go('v-dash')}
+let dmode='demo';
+function exp(){const h=['id','demo','date',...Q.map((q,i)=>'q'+(i+1)),...K.map(k=>'score_'+k),'sleep_type','survey_version','survey_hash','order_shown'];
+const rows=db.map(x=>[x.id,x.demo,x.ts,...x.a,...K.map(k=>x.p[k]),T[x.type].n,x.v||'',x.h||'',x.ord?x.ord.join('-'):'']);
+dl('sleep_survey.csv','\ufeff'+[h,...rows].map(r=>r.join(',')).join('\n'),$('#csv'))}
+</script></body></html>
